@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+      integrity="sha256-ECB9bbROLGm8wOoEbHcHRxlHgzGqYpDtNTgDTyDz0wg="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/15112e41d3.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .exito,
+      .error {
+        color: white;
+        padding: 5px;
+        margin: 5px 0 15px 0;
+      }
+      .exito {
+        background-color: green;
+      }
+      .error {
+        background-color: red;
+      }
+    </style>
+    <title>Listado de libros</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Agregar Libro</h1>
+
+      <form id="formLibro">
+        <div>
+          <label for="Titulo">Titulo</label>
+          <input type="text" class="u-full-width" id="inputTitulo" />
+        </div>
+        <div>
+          <label for="Autor">Autor</label>
+          <input type="text" class="u-full-width" id="inputAutor" />
+        </div>
+        <div>
+          <label for="ISBN">ISBN</label>
+          <input type="text" class="u-full-width" id="inputISBN" />
+        </div>
+        <div>
+          <input type="submit" value="Ingresar" />
+        </div>
+      </form>
+
+      <hr />
+      <table class="u-full-width">
+        <thead>
+          <tr>
+            <th>Titulo</th>
+            <th>Autor</th>
+            <th>ISBN</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="lista-libros"></tbody>
+      </table>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
